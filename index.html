@@ -1,70 +1,75 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-
 <head>
+  <title>Responsive Gallery</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>SM+ART</title>
-
-	<link rel="stylesheet" href="stylesheet.css">
-	
-<!-- HTML5shiv, for IE 6, 7 and 8 -->
-<!--[if lte IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-<![endif]-->
-
+  <link rel="stylesheet" type="text/css" href="gallery.css">
 </head>
+<body>
 
+<section class="wrapper">
+  <header class="site-header">
+    <h1 class="h1">Coffee Brewers</h1>
+  </header>
 
+  <div class="contents group">
+    <div class="articles">
+      <article class="content">
+        <header class="content-header">
+          <h1 class="h1">Hario V60</h1>
+        </header>
 
+        <p>
+          This manual brewing method gives you complete control over brewing time and
+          temperature, so your coffee is brewed just the way you like it.
+        </p>
+      </article>
 
-<body class="body">
+      <article class="content">
+        <header class="content-header">
+          <h1 class="h1">Aerobie AeroPress</h1>
+        </header>
 
-<div id="wrapper">
+        <p>
+          This device - the Scandinavians love it (they hold the AeroPress World Championships) -
+          and the pros in the US and Canada seem to be really getting into it too. There's even
+          coffee bars that use AeroPresses almost exclusively for non-espresso coffee. We have
+          our own love-hate relationship at CoffeeGeek with the AeroPress. We love using it. We
+          love that you can "hack" it to brew different ways. We love how it can produce a
+          beautiful cup of coffee in under a minute.
+        </p>
+      </article>
 
-<figure class="logo">
-	<img src="images/suziemiller_logo.png" />
-</figure>
+      <article class="content">
+        <header class="content-header">
+          <h1 class="h1">Walkure Bayreuth</h1>
+        </header>
 
-<article>
-	<p class="content">Suzie is a student at Columbia College Chicago, majoring in marketing communications with a concetration is advertising and minoring in web development. In high school, art and marketing were her favorite classes, so she decided advertising was the perfect combination. She quickly learned the focus on art and design was minimal in the marketing department and self taught herself the Adobe Creative Suite. By her junior year, she was working as a graphic designer at the second largest newspaper in Indiana. </p>
-</article>
+        <p>
+          This fantastic, modern appeal coffee brewer is all you need (besides hot water and coffee)
+          to brew a great cup. Made by the Walkure porcelain specialists in Germany, even the filter
+          is porcelain, and as such, the brewer requires no other filtration - no paper, no metal,
+          no nothing.
+        </p>
+      </article>
+    </div>
 
-<aside class="work">
-	<p class="side_content">Here are examples of Suzie's work at the newspaper.</p>
-	<gallery>
-		<figure>
-			<img src="images/allied.jpg" />
-		</figure>
-		
-		<figure>
-			<img src="images/care_point.jpg" />
-		</figure>
-	</gallery>
-</aside>
+    <figure class="gallery" id="gallery-brewers">
+      <img class="image" src="hariov60.jpg" alt="Hario V60" />
+      <img class="image" src="aerobieaeropress.jpg" alt="Aerobie Aeropress" />
+      <img class="image" src="walkurebayreuth.jpg" alt="Walkure Bayreuth" />
+    </figure>
+  </div>
 
-<article>
-	<p class="content">Ultimately, Suzie's goal is to be an art director at an advertising agency. Her interest in web development makes her an ideal candidate for an interactive art director, however Fast Company states 2013 will be the year that interactive art directors and art directors become one. For now, any job title that ends in art director is fine with her.</p>
-</article>
+  <footer class="site-footer">
+    &copy; 2013
+  </footer>
+</section>
 
-<aside class="work">
-	<p class="side_content">Here is an example of Suzie's freelance work.</p>
-	<gallery>
-		<figure>
-			<img src="images/soham.jpg" />
-		</figure>
-	</gallery>
-</aside>
-
-<footer>
-</footer>
-
-</div> <!-- closes container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="enquire.js"></script>
+<script src="gallery.js"></script>
 
 </body>
 </html>
-
-
